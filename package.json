@@ -1,0 +1,19 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "API REST que permita manejar librerías y los libros asociados a cada una de",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlaraujo1978/proyectoNodeJS.git"
+  },
+  "author": "mlaraujo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlaraujo1978/proyectoNodeJS/issues"
+  },
+  "homepage": "https://github.com/mlaraujo1978/proyectoNodeJS#readme"
+}
