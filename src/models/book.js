@@ -1,6 +1,7 @@
 
 const {DataTypes } = require('sequelize');
 const {sequelize} = require('../config/dbConfig');
+const BookShop = require('./bookShop');
 
 const Book = sequelize.define("Books",{
     isbn:{
@@ -26,7 +27,14 @@ const Book = sequelize.define("Books",{
     library: {
         type: DataTypes.INTEGER,
         allowNull: false,
+
+        references: {
+            model: 'bookShop',          
+            key: 'id',
+        },    
     },
 });
+
+Book.belongsTo(BookShop, { foreignKey: 'library' });
 
 module.exports = Book;

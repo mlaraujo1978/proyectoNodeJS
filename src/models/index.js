@@ -1,5 +1,5 @@
 const User = require('./user');
-module.exports = { User };
+const Book = require('./book');
+const BookShop = require('./bookShop');
 
-
-//video 5 -- deje en el minuto 11:35hs 
+module.exports = { User, Book, BookShop };
